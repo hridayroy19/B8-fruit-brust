@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello</title>
+    <!-- tailwind and daisy ui link -->
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- google font lato -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<!-- tawild cousmize  -->
+<!-- font awosam -->
+<script src="https://kit.fontawesome.com/10c621417f.js" crossorigin="anonymous"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+
+    .font-lato{
+        font-family: 'Lato', sans-serif;
+    }
+  </style>
+
+</head>
+<body class="font-lato">
+     <header class="container mx-auto px-60 py-12">
+        <!-- nav bar style -->
+        
+            <!-- <div class="navbar bg-[#F85559] rounded-[600px]">
+                <div class="navbar-start">
+                  
+                  <div class="dropdown ">
+                    <label tabindex="0" class="btn btn-ghost btn-circle">
+                      <svg xmlns= "http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Homepage</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>About</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="navbar text-end">
+                  <a class="btn btn-ghost normal-case h-[60px] max-[54.520px]"><img src="images/logo.png" alt=""><span class="text-4xl font-bold">Fruit Burst </span></a>
+                </div>
+                <div class="navbar text-right">
+                  <button class="btn btn-circle text-end h-[40px] w-[280px]  ">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5  w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                  </button>
+                    </div>
+                  </button>
+                </div>
+              </div> -->
+
+      
+     </header>
+
+
+     <main>
+
+        <div class=" container mx-auto lg:px-60 md:px-12 px-4 lg:py-12 md:py-8 py-4">
+          <div class=" flex lg:flex-row flex-col justify-between">
+            <div class="">
+                <h2 class="lg:text-5xl text-3xl font-extrabold"> Deal of the day</h2>
+                <p class=" font-medium py-6">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
+                    Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div>
+                <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:15;"></span>
+                      </span>
+                      days
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:10;"></span>
+                      </span>
+                      hours
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:24;"></span>
+                      </span>
+                      min
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:46;"></span>
+                      </span>
+                      sec
+                    </div>
+                  </div>
+
+            </div>
+          </div>
+          <!-- card 1 -->
+          <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6">
+            <div class="card card-compact  text-center  bg-[#fff] p-3 border">
+                <figure><img class="py-9" src="images/fruit6.png" alt="Shoes" /> 
+    
+                    
+                </figure>
+                <p class=" text-2xl font-bold">12.90$ - 18.85$</p>
+                <hr class="mt-4">
+                
+                <div class="card-body">
+                  <h2 class="card-title font-medium justify-center">appile</h2>             
+                  <div class="card-actions justify-center p-3">
+                    <!-- reating -->
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div> 
+    
+                    
+                  </div>
+                  <button class="justify-center">details</button>
+                </div>
+              </div>
+
+<!-- cared 2 -->
+<div class="card card-compact  text-center  bg-[#fff] p-3 border">
+    <figure><img class="py-9" src="images/fruit7.png" alt="Shoes" /> 
+
+        
+    </figure>
+    <p class=" text-2xl font-bold">12.90$ - 18.85$</p>
+    <hr class="mt-4">
+    
+    <div class="card-body">
+      <h2 class="card-title font-medium justify-center">orage</h2>             
+      <div class="card-actions justify-center p-3">
+        <!-- reating  -->
+        <div class="rating">
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          </div> 
+
+        
+      </div>
+      <button class="justify-center">details</button>
+    </div>
+  </div>
+
+  <div class="card card-compact  text-center  bg-[#fff] p-3 border">
+    <figure><img class="py-9" src="images/fruit8.png" alt="Shoes" /> 
+
+        
+    </figure>
+    <p class="  text-2xl font-bold">12.90$ - 18.85$</p>
+    <hr class="mt-4">
+    
+    <div class="card-body">
+      <h2 class="card-title font-medium justify-center"> Red Dragon</h2>             
+      <div class="card-actions justify-center p-3">
+        <!-- reatin  -->
+        <div class="rating">
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          </div> 
+
+        
+      </div>
+      <button class="justify-center">details</button>
+    </div>
+  </div>
+
+  <div class="card card-compact  text-center  bg-[#fff] p-3 border">
+    <figure><img class="py-9" src="images/fruit9.png" alt="Shoes" /> 
+
+        
+    </figure>
+    <p class=" text-2xl font-bold">12.90$ - 18.85$</p>
+    <hr class="mt-4">
+    
+    <div class="card-body">
+      <h2 class="card-title font-medium justify-center">Banana</h2>             
+      <div class="card-actions justify-center p-3">
+        <!-- reatin  -->
+        <div class="rating">
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          </div> 
+
+        
+      </div>
+      <button class="justify-center">details</button>
+    </div>
+  </div>
+ 
+  
+          </div>
+         
+          
+
+        </div>
+        <div class=" text-center">
+            <button class=" btn bg-[#F85559]"> shope all</button>
+          </div>
+       
+       <!-- meet the team secton --> 
+       <section class=" container mx-auto lg:px-60 md:px-12 px-4 lg:py-12 py-4">
+       
+            <div>
+                <div class="hero h-[650px] " style="background-image: url(images/banner1.png)">
+                    <div class="hero-overlay bg-opacity-60">
+
+                    </div >
+
+                    <div class="text-center lg:-mt-80 md:-mt-11 -mt-4">
+                        <h2 class=" lg:text-5xl text-2xl font-extrabold text-[#fff]">Meet the team section<h2>                
+                        <p class="text-[#fff]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
+                             Latin literature from 45 BC, making it over 2000 years old.</p>
+                    </div>
+                                
+                                                     
+                    <div class="flex lg:flex-row flex-col justify-center text-[#fff] text-center lg:px-40 md:px-11 px-4 lg:mt-28 md:mt-11 mt-5 lg:gap-24 gap-4">
+                        <div class="lg:py-14 py-3">
+                            <img class=" lg:h-[95x]  lg:w-[160px]" src="images/member1.png" alt="">                
+                        <h5 class="px-4 font-semibold mt-6 text-xl">Awlad Hossain</h5>
+                        <p class="font-medium">Fruits Expert</p>
+                        <a class="text-[red]" href=""><i class="fa-brands fa-facebook"></i></a> 
+                        <a class="text-[red]" href=""><i class="fa-brands fa-twitter"></i></a> 
+                        <a class="text-[red]" href=""><i class="fa-brands fa-linkedin"></i></a>  
+                        </div>
+
+                        <div class="lg:py-14 py-3">
+                            <img class=" h-[95px] w-[120px]" src="images/member2.png" alt="">                
+                        <h5 class="px-3 font-bold text-xl">Safia Chowdhury</h5>
+                        <p class="font-medium">Fruits Expert</p> 
+                        <a class="text-[red]" href=""><i class="fa-brands fa-facebook"></i></a> 
+                        <a class="text-[red]" href=""><i class="fa-brands fa-twitter"></i></a> 
+                        <a class="text-[red]" href=""><i class="fa-brands fa-linkedin"></i></a>  
+                        </div>
+
+                        <div class="lg:py-14 py-3">
+                            <img class=" h-[95px] w-[120px]" src="images/member3.png" alt="">                
+                        <h5 class="px-3 font-bold text-xl">Rokib Hossain</h5>
+                        <p class="font-medium">Fruits Expert</p> 
+                        <a class="text-[red]" href=""><i class="fa-brands fa-facebook"></i></a> 
+                        <a class="text-[red]" href=""><i class="fa-brands fa-twitter"></i></a> 
+                        <a class="text-[red]" href=""><i class="fa-brands fa-linkedin"></i></a> 
+                        </div>
+                        <div class="lg:py-14 py-3">
+                            <img class=" h-[95px] w-[120px]" src="images/member4.png" alt="">                
+                        <h5 class="px-3 font-bold text-xl">Chaity</h5>
+                        <p class="font-medium">Fruits Expert</p> 
+                        <a class="text-[red]" href=""><i class="fa-brands fa-facebook"></i></a> 
+                        <a class="text-[red]" href=""><i class="fa-brands fa-twitter"></i></a> 
+                        <a class="text-[red]" href=""><i class="fa-brands fa-linkedin"></i></a> 
+                        </div>                       
+                      </div>
+                  </div>                  
+            </div>
+       </section>
+
+
+            <section class="container mx-auto lg:px-60 md:px-12 px-4 lg:py-12 md:py-8 py-4">
+                <div class="text-center">
+                    <h2 class="text-4xl font-extrabold text-[#121212]"> Why Choose Us</h2>
+                    <p class="font-medium py-7"> Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
+                         Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+
+                <div>
+
+                    <div class="flex gap-3">
+                        <div class=" text-[blck] rounded-">
+                            <a class="p-4 rounded-3xl bg-[#1212121A]"  href=""> <i class="fa-solid fa-users"></i></a>
+                        </div>
+                        
+                       <div>
+                        <h3 class="text-xl font-extrabold text-[#121212]">Dedicated Team </h3>
+                        <br>
+
+                        <hr class="w-24 text-[#121212cc ]">
+                        <p class="font-medium py-3 "> Professional employees are there for you to <br>
+                             pick the most amazing and fresh fruits.</p>
+                       </div>
+                    </div>
+
+
+                    <div class="flex gap-3 py-4">
+                        <div class=" text-[blck] rounded-">
+                            <a class="p-4 rounded-3xl bg-[#1212121A]"  href=""><i class="fa-solid fa-heart"></i></a>
+                        </div>
+                        
+                       <div>
+                        <h3 class="text-xl font-extrabold text-[#121212]">Dedicated Team </h3>
+                        <br>
+
+                        <hr class="w-24 text-[#121212cc ]">
+                        <p class="font-medium py-3 "> Professional employees are there for you to <br>
+                             pick the most amazing and fresh fruits.</p>
+                       </div>
+                    </div>
+
+                     <div class="flex gap-3">
+                        <div class=" text-[blck] rounded-">
+                            <a class="p-4 rounded-3xl bg-[#1212121A]"  href=""> <i class="fa-solid fa-gifts"></i></a>
+                        </div>
+                        
+                       <div>
+                        <h3 class="text-xl font-extrabold text-[#121212]">Dedicated Team </h3>
+                        <br>
+
+                        <hr class="w-24 text-[#121212cc ]">
+                        <p class="font-medium py-3 "> Professional employees are there for you to <br>
+                             pick the most amazing and fresh fruits.</p>
+                       </div>
+
+
+
+                       
+                    </div>
+                    <!-- image secton -->
+
+                    <img src="images/whychoose1.png" alt="">
+                </div>
+<!-- Integrated Supplier secton -->
+
+
+<div class="flex gap-3">
+
+
+
+    <div>
+        <h3 class="text-xl font-extrabold text-[#121212] text-end">Dedicated Team </h3>
+        <br>
+    
+        <hr class="w-24 text-[#121212cc ] text-end">
+        <p class="font-medium py-3 text-end"> Professional employees are there for you to <br>
+             pick the most amazing and fresh fruits.</p>
+       </div>
+    
+    <div class=" text-[blck] rounded-">
+        <a class="p-4 rounded-3xl bg-[#1212121A]"  href=""> <i class="fa-solid fa-users"></i></a>
+    </div>
+    
+  
+
+
+   
+</div>
+                
+            </section>
+     </main>
+
+
+</body>
+</html>
