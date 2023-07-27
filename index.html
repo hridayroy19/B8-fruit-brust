@@ -37,50 +37,55 @@
 
 <body class="font-lato">
      <header class="container mx-auto lg:px-60 md:px-11 px-4 lg:py-12 md:py-8 py-3">
-        
-<!-- <nav class="grid ">
-  <div class="navbar bg-[#F85559] rounded-[550px]">
-    <div class=" text-xs  ">
-      <a class="btn btn-ghost normal-case text-xl">Home</a>
-      <a class="btn btn-ghost normal-case text-xl">About Us</a>
-      <a class="btn btn-ghost normal-case text-xl">Shop</a>
-      <a class="btn btn-ghost normal-case text-xl">All Fruits</a>
+     
+<!-- nav bar  -->
 
+<nav class="md:bg-orange-500 rounded-full">
+  <div class="flex flex-wrap items-center justify-between mx-auto p-5">
+    <div
+      class="  w-full md:flex md:w-auto justify-between items-center hidden " >   
+      <ul
+        class="flex flex-col text-lg text-white gap-5 font-bold rounded-lg md:flex-row uppercase">
+        <li>home</li>
+        <li>about US</li>
+        <li>shop</li>
+        <li>all Fruits</li>
+      </ul>
     </div>
-    <div class=" flex flex-1  gap-5 " >
-      <img class="text-center w-[40px] h-[45px]" src="images/logo.png" alt="">
-      <h4 class="justify-center">Fruit Burst</h4>
+    <div class="flex items-center gap-5">
+      <img class="h[10px] w-11" src="images/logo.png" alt="">
+      <h3 class="text-3xl font-bold"> Friuit burst</h3>
     </div>
-  
-    <div class="flex-none gap-2">
-      <div class="form-control">
-        <input type="text" placeholder="Search" class="input input-bordered lg:w-9 lg:w-auto w-4 w-auto rounded-3xl" />
+    <div class="flex">
+      <div class="relative mx-auto text-gray-600 hidden md:block">
+          <input type="text" placeholder="scarch " class="input input-bordered w-full max-w-xs rounded-[87px]" />
       </div>
-      <div class="dropdown dropdown-end">
-        <label tabindex="0" class="btn btn-ghost btn-circle lg:hidden  avatar">
-          <div class=" h-6 rounded-full text-center">
-            <i class="fa-solid fa-bars"></i>
-          </div>
+
+      <div class="dropdown">
+        <label tabindex="0" class="btn btn-ghost md:hidden font-extrabold">
+          <i class="fa-solid fa-bars"> </i>
         </label>
-        <ul tabindex="0" class="mt-3 z-[1] p-2 shadow lg:hidden menu menu-sm dropdown-content  rounded-box">
-          <a class="btn btn-ghost normal-case text-xl">Home</a>
-      <a class="btn btn-ghost normal-case text-xl">About Us</a>
-      <a class="btn btn-ghost normal-case text-xl">Shop</a>
-      <a class="btn btn-ghost normal-case text-xl">All Fruits</a>
+        <ul
+          tabindex="0"
+          class="relative w-[250px] shadow-xl gap-4 -ml-[200px] menu menu-sm dropdown-content z-[1] py-2 mt-1 bg-gray-100" >
+          <li>
+            <input type="text" placeholder="Search" class="input input-bordered w-full max-w-xs rounded-3xl py-3 /> </li>
+          <li class=" ">Home</li>
+          <li class="">About US</li>
+          <li class="">Shop</li>      
         </ul>
       </div>
     </div>
   </div>
-
-</nav> -->
-<!-- 115454545 -->
+</nav>
 
 
 
+
+
+
+        <!-- banner secton  -->
 <div>
-
-
-
   <div class="carousel w-full h-[500px] my-6">
     <div
       id="slide1"
@@ -261,25 +266,28 @@
                     Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
             <div>
-                <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                <div class="grid grid-flow-col gap-5 text-center my-7 auto-cols-max">
                     <div class="flex flex-col">
                       <span class="countdown font-mono text-5xl">
                         <span style="--value:15;"></span>
                       </span>
                       days
                     </div> 
+                    <i class="fa-solid fa-ellipsis-vertical mt-3 text-2xl"></i>
                     <div class="flex flex-col">
                       <span class="countdown font-mono text-5xl">
-                        <span style="--value:10;"></span>
+                        <span style="--value:10;"> </span>
                       </span>
                       hours
                     </div> 
+                    <i class="fa-solid fa-ellipsis-vertical mt-3 font-bold text-2xl"></i>
                     <div class="flex flex-col">
                       <span class="countdown font-mono text-5xl">
-                        <span style="--value:24;"></span>
+                        <span style="--value:24 ;"></span>
                       </span>
                       min
-                    </div> 
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical text-2xl font-bold mt-3"></i> 
                     <div class="flex flex-col">
                       <span class="countdown font-mono text-5xl">
                         <span style="--value:46;"></span>
@@ -475,11 +483,11 @@
         >
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="hero-content text-center text-neutral-content">
-            <div class="max-w-3xl">
+            <div class="max-w-[780px]">
               <h1 class="mb-5 lg:text-5xl text-2xl font-bold">Meet the team section</h1>
               <p class="mb-5 font-medium">
-                Contrary to popular belief, is not simply random text. It has
-                roots in a piece of classical Latin literature from 45 BC,
+                Contrary to popular belief is not simply random text. It has
+                roots in a piece of classical Latin literature45 BC,
                 making it over 2000 years old.
               </p>
               
